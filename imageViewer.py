@@ -869,13 +869,3 @@ class ParameterAdjustWidget(QWidget):
             return
         self.stack_select_combobox.setCurrentText(image_name.removesuffix('_image'))
         self.stack_widget.setCurrentIndex(self.stack_select_combobox.currentIndex())
-        
-def main():
-    app = QApplication(sys.argv)
-    window = MainWindow()
-    window.show()
-    app.exec()
-    window.raise_()
-    
-if(__name__ == "__main__"):
-    main()
